@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    
+    <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+    
+    <body>
+        <ul>
+  <li><a  href="HomePage.jsp">Laman Utama</a></li>
+
+</ul>
+
+        <div class="container">
+            <div class="jumbotron text-center">
+                <h2>Hubungi Admin</h2>
+                <p><a style="color:red;" href="https://www.youtube.com/javahub018" target="_blank"></a></p>
+            </div>
+            <br>
+            <form action="SendEmail" method="post">
+                <table class="table table-hover">
+                    <tr>
+                        <td>Nama Anda</td>
+                        <td><input type="text" required="" placeholder="Nama" name="name" class="form-control"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" required="" placeholder="Email" name="email" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Tujuan</td>
+                        <td><input type="text" required="" placeholder="Tujuan" name="subject" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Mesej</td>
+                        <td><textarea name="message" required="" rows="5" cols="100" placeholder="Mesej Anda"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" id="submit" class="btn btn-primary" value="Hantar">  <button class="btn btn-primary"onclick="goBack()">Batal</button>
+
+<p></p>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                </table>
+            </form>
+
+        </div>
+    </body>
+</html>
